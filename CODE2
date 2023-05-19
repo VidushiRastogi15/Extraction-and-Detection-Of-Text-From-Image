@@ -1,0 +1,24 @@
+!sudo apt install tesseract-ocr
+!pip install pytesseract
+
+import cv2
+import pytesseract
+
+# Configure pytesseract executable path (if necessary)
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+# Load the image
+image_path = 'I-Wish-I-Wrote-The-Way-I-Thought.jpg'  # Replace with the path to your image
+image = cv2.imread(image_path)
+# Preprocess the image (if necessary)
+# Apply any preprocessing steps like resizing, denoising, or thresholding as per your requirements
+
+# Convert the image to grayscale
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+# Perform text extraction using pytesseract
+text = pytesseract.image_to_string(gray)
+
+# Print the extracted text
+print(text)
