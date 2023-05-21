@@ -1,3 +1,5 @@
+# DONE ON VISUAL STUDIO CODE
+
 import cv2
 import pytesseract
 
