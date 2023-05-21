@@ -1,3 +1,4 @@
+## DONE ON GOOGLE COLAB
 !sudo apt install tesseract-ocr
 !pip install pytesseract
 
