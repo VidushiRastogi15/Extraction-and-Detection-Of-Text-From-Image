@@ -1,4 +1,4 @@
-# DONE ON VISUAL STUDIO CODE
+# DONE ON GOOGLE COLAB
 
 import cv2
 import pytesseract
